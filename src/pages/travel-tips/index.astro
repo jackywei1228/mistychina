@@ -1,0 +1,38 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Travel Tips — MistyChina',
+  description: 'Practical travel tips for China: safety, scams, etiquette, and common mistakes.',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="mx-auto max-w-5xl px-4 py-12">
+    <h1 class="text-4xl font-bold tracking-tight">Travel Tips</h1>
+    <p class="mt-4 text-lg opacity-80">
+      Quick, practical tips to help you travel China smoothly—especially on your first trip.
+    </p>
+
+    <div class="mt-10 grid gap-4 md:grid-cols-3">
+      <a class="rounded-2xl border p-6 hover:shadow-md transition" href="/travel-tips/scams">
+        <h2 class="text-xl font-semibold">Scams to avoid</h2>
+        <p class="mt-2 text-sm opacity-80">Common tourist traps and how to spot them.</p>
+      </a>
+
+      <a class="rounded-2xl border p-6 hover:shadow-md transition" href="/travel-tips/safety">
+        <h2 class="text-xl font-semibold">Safety basics</h2>
+        <p class="mt-2 text-sm opacity-80">What’s actually safe, what to be careful about.</p>
+      </a>
+
+      <a class="rounded-2xl border p-6 hover:shadow-md transition" href="/travel-tips/dos-and-donts">
+        <h2 class="text-xl font-semibold">Do’s & Don’ts</h2>
+        <p class="mt-2 text-sm opacity-80">Etiquette, tipping, and cultural basics.</p>
+      </a>
+    </div>
+
+    <div class="mt-10">
+      <a class="btn btn-primary" href="/start-here">Start with the First-time Guide →</a>
+    </div>
+  </section>
+</Layout>

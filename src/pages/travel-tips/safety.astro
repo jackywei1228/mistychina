@@ -1,0 +1,28 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Safety in China — MistyChina',
+  description: 'Practical safety tips for traveling in China as a foreign visitor.',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="text-4xl font-bold tracking-tight">Safety Basics</h1>
+    <p class="mt-4 text-lg opacity-80">
+      China is generally safe in major cities, but every destination has common-sense rules. This guide will be expanded.
+    </p>
+
+    <ul class="mt-8 list-disc pl-6 space-y-2 opacity-90">
+      <li>Keep passport photos + digital backups</li>
+      <li>Use official ride-hailing / official taxi queues</li>
+      <li>Be careful with strangers offering “special deals”</li>
+      <li>Watch your belongings in crowded tourist areas</li>
+    </ul>
+
+    <div class="mt-10">
+      <a class="btn btn-primary" href="/start-here">Start here →</a>
+    </div>
+  </section>
+</Layout>

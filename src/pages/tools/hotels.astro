@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Hotels & Transport Booking — MistyChina',
+  description: 'Where to book hotels and transport in China as a foreign traveler.',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="text-4xl font-bold tracking-tight">Hotels & Transport</h1>
+    <p class="mt-4 text-lg opacity-80">
+      This page will become a detailed booking guide. For now, browse destinations and use our city pages.
+    </p>
+
+    <div class="mt-8 flex gap-3">
+      <a class="btn btn-primary" href="/destinations">Explore destinations →</a>
+      <a class="btn btn-secondary" href="/start-here/transportation">Transport guide</a>
+    </div>
+  </section>
+</Layout>

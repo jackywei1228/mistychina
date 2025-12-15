@@ -1,0 +1,41 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: "Do's & Don'ts in China — MistyChina",
+  description: 'Simple etiquette and cultural tips for first-time visitors to China.',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="text-4xl font-bold tracking-tight">Do’s & Don’ts</h1>
+    <p class="mt-4 text-lg opacity-80">
+      A quick starter list. We’ll expand this into a detailed culture & etiquette guide.
+    </p>
+
+    <div class="mt-8 space-y-6">
+      <div class="rounded-2xl border p-6">
+        <h2 class="text-xl font-semibold">Do</h2>
+        <ul class="mt-3 list-disc pl-6 space-y-2 opacity-90">
+          <li>Carry a small amount of cash as backup</li>
+          <li>Use translation apps for menus and addresses</li>
+          <li>Keep hotel card / address in Chinese</li>
+        </ul>
+      </div>
+
+      <div class="rounded-2xl border p-6">
+        <h2 class="text-xl font-semibold">Don’t</h2>
+        <ul class="mt-3 list-disc pl-6 space-y-2 opacity-90">
+          <li>Rely only on Google services (maps may not be usable)</li>
+          <li>Assume every tourist seller is official</li>
+          <li>Over-pack — most cities are modern and convenient</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10">
+      <a class="btn btn-primary" href="/start-here/language-culture">Language & culture guide →</a>
+    </div>
+  </section>
+</Layout>

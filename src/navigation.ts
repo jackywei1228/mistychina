@@ -3,180 +3,117 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Start Here',
       links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
+        { text: 'First-time Guide', href: getPermalink('/start-here') },
+        { text: 'Before You Go', href: getPermalink('/start-here/before-you-go') },
+        { text: 'Money & Payments', href: getPermalink('/start-here/money-payments') },
+        { text: 'Internet & Apps', href: getPermalink('/start-here/internet-apps') },
+        { text: 'Transportation', href: getPermalink('/start-here/transportation') },
+        { text: 'Language & Culture', href: getPermalink('/start-here/language-culture') },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Destinations',
       links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
+        { text: 'All destinations', href: getPermalink('/destinations') },
+        { text: 'Beijing', href: getPermalink('/destinations/beijing') },
+        { text: 'Shanghai', href: getPermalink('/destinations/shanghai') },
+        { text: "Xi'an", href: getPermalink('/destinations/xian') },
+        { text: 'Chengdu', href: getPermalink('/destinations/chengdu') },
+        { text: 'Guilin', href: getPermalink('/destinations/guilin') },
+        { text: 'Zhangjiajie', href: getPermalink('/destinations/zhangjiajie') },
       ],
     },
     {
-      text: 'Landing',
+      text: 'Travel Tips',
       links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
+        { text: 'All tips', href: getPermalink('/travel-tips') },
+        { text: 'Scams to avoid', href: getPermalink('/travel-tips/scams') },
+        { text: 'Safety basics', href: getPermalink('/travel-tips/safety') },
+        { text: "Do's & Don'ts", href: getPermalink('/travel-tips/dos-and-donts') },
+      ],
+    },
+    {
+      text: 'Tools',
+      links: [
+        { text: 'All tools', href: getPermalink('/tools') },
+        { text: 'Internet & eSIM', href: getPermalink('/tools/internet') },
+        { text: 'Hotels & Transport', href: getPermalink('/tools/hotels') },
       ],
     },
     {
       text: 'Blog',
       links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
+        { text: 'Latest posts', href: getBlogPermalink() },
+        { text: 'Categories', href: getPermalink('guides', 'category') },
+        { text: 'Tags', href: getPermalink('china', 'tag') },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
+
+  // 右上角按钮（非常重要：引导转化）
+  actions: [
+    { text: 'First-time Guide', href: getPermalink('/start-here') },
+    { text: 'Newsletter', href: getPermalink('/newsletter'), variant: 'primary' },
+  ],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Guides',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Start Here', href: getPermalink('/start-here') },
+        { text: 'Payments', href: getPermalink('/start-here/money-payments') },
+        { text: 'Internet & Apps', href: getPermalink('/start-here/internet-apps') },
+        { text: 'Transportation', href: getPermalink('/start-here/transportation') },
+        { text: 'Language & Culture', href: getPermalink('/start-here/language-culture') },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Destinations',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'All destinations', href: getPermalink('/destinations') },
+        { text: 'Beijing', href: getPermalink('/destinations/beijing') },
+        { text: 'Shanghai', href: getPermalink('/destinations/shanghai') },
+        { text: "Xi'an", href: getPermalink('/destinations/xian') },
+        { text: 'Chengdu', href: getPermalink('/destinations/chengdu') },
       ],
     },
     {
-      title: 'Support',
+      title: 'Tools',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Tools & Services', href: getPermalink('/tools') },
+        { text: 'Internet & eSIM', href: getPermalink('/tools/internet') },
+        { text: 'Hotels', href: getPermalink('/tools/hotels') },
       ],
     },
     {
-      title: 'Company',
+      title: 'MistyChina',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'About', href: getPermalink('/about') },
+        { text: 'Contact', href: getPermalink('/contact') },
+        { text: 'Affiliate Disclosure', href: getPermalink('/affiliate-disclaimer') },
+        { text: 'Privacy Policy', href: getPermalink('/privacy-policy') },
       ],
     },
   ],
+
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Privacy Policy', href: getPermalink('/privacy-policy') },
+    { text: 'Affiliate Disclosure', href: getPermalink('/affiliate-disclaimer') },
   ],
+
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+    // 如果你不想暴露 GitHub，可删掉这一行
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
   ],
+
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
+    © ${new Date().getFullYear()} <span class="font-semibold">MistyChina</span>. Practical China travel guides for Western travelers.
   `,
 };

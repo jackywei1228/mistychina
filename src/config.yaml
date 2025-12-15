@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: "MistyChina"
+  site: "https://mistychina.com"
   base: '/'
   trailingSlash: false
 
@@ -9,9 +9,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: "MistyChina – China Travel Guide for Western Travelers"
+    template: "%s — MistyChina"
+  description: "Practical, honest China travel guides: payments, internet, transport, safety, and the best destinations."
   robots:
     index: true
     follow: true

@@ -1,0 +1,28 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Newsletter — MistyChina',
+  description: 'Get practical China travel tips, updates, and checklists.',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="text-4xl font-bold tracking-tight">MistyChina Newsletter</h1>
+    <p class="mt-4 text-lg opacity-80">
+      Practical China travel tips. No spam. Payments, internet, transport, safety, and destination updates.
+    </p>
+
+    <div class="mt-8 rounded-2xl border p-6">
+      <h2 class="text-xl font-semibold">Coming soon</h2>
+      <p class="mt-2 opacity-80">
+        We’re setting up email signup. For now, start with the First-time Guide.
+      </p>
+      <div class="mt-6 flex gap-3">
+        <a class="btn btn-primary" href="/start-here">Start here →</a>
+        <a class="btn btn-secondary" href="/destinations">Explore destinations</a>
+      </div>
+    </div>
+  </section>
+</Layout>
